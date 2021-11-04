@@ -1,0 +1,267 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Server\\Task 1.Server.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Client\\Task 1.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Client\\Task 1.Client.csproj",
+        "projectName": "Task_1.Client",
+        "projectPath": "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Client\\Task 1.Client.csproj",
+        "packagesPath": "C:\\Users\\isuru.sa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\isuru.sa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Shared\\Task 1.Shared.csproj": {
+                "projectPath": "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Shared\\Task 1.Shared.csproj"
+              },
+              "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Vaccinedetails\\Vaccinedetails.csproj": {
+                "projectPath": "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Vaccinedetails\\Vaccinedetails.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Build": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Server\\Task 1.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Server\\Task 1.Server.csproj",
+        "projectName": "Task_1.Server",
+        "projectPath": "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Server\\Task 1.Server.csproj",
+        "packagesPath": "C:\\Users\\isuru.sa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\isuru.sa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Client\\Task 1.Client.csproj": {
+                "projectPath": "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Client\\Task 1.Client.csproj"
+              },
+              "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Shared\\Task 1.Shared.csproj": {
+                "projectPath": "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Shared\\Task 1.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[3.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Shared\\Task 1.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Shared\\Task 1.Shared.csproj",
+        "projectName": "Task 1.Shared",
+        "projectPath": "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Shared\\Task 1.Shared.csproj",
+        "packagesPath": "C:\\Users\\isuru.sa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Task 1\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\isuru.sa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Vaccinedetails\\Vaccinedetails.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Vaccinedetails\\Vaccinedetails.csproj",
+        "projectName": "Vaccinedetails",
+        "projectPath": "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Vaccinedetails\\Vaccinedetails.csproj",
+        "packagesPath": "C:\\Users\\isuru.sa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\isuru.sa\\source\\repos\\Task 1\\Vaccinedetails\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\isuru.sa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

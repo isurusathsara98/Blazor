@@ -1,0 +1,10 @@
+C:\Users\isuru.sa\source\repos\Task 1\VaccineDistribution.Models\bin\Debug\netcoreapp3.1\VaccineDistribution.Models.deps.json
+C:\Users\isuru.sa\source\repos\Task 1\VaccineDistribution.Models\bin\Debug\netcoreapp3.1\VaccineDistribution.Models.dll
+C:\Users\isuru.sa\source\repos\Task 1\VaccineDistribution.Models\bin\Debug\netcoreapp3.1\VaccineDistribution.Models.pdb
+C:\Users\isuru.sa\source\repos\Task 1\VaccineDistribution.Models\obj\Debug\netcoreapp3.1\VaccineDistribution.Models.csproj.AssemblyReference.cache
+C:\Users\isuru.sa\source\repos\Task 1\VaccineDistribution.Models\obj\Debug\netcoreapp3.1\VaccineDistribution.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isuru.sa\source\repos\Task 1\VaccineDistribution.Models\obj\Debug\netcoreapp3.1\VaccineDistribution.Models.AssemblyInfoInputs.cache
+C:\Users\isuru.sa\source\repos\Task 1\VaccineDistribution.Models\obj\Debug\netcoreapp3.1\VaccineDistribution.Models.AssemblyInfo.cs
+C:\Users\isuru.sa\source\repos\Task 1\VaccineDistribution.Models\obj\Debug\netcoreapp3.1\VaccineDistribution.Models.csproj.CoreCompileInputs.cache
+C:\Users\isuru.sa\source\repos\Task 1\VaccineDistribution.Models\obj\Debug\netcoreapp3.1\VaccineDistribution.Models.dll
+C:\Users\isuru.sa\source\repos\Task 1\VaccineDistribution.Models\obj\Debug\netcoreapp3.1\VaccineDistribution.Models.pdb
