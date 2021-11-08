@@ -1,0 +1,12 @@
+C:\Users\isuru.sa\source\repos\Vaccines\Vaccines\Shared\bin\Debug\net5.0\Vaccines.Shared.deps.json
+C:\Users\isuru.sa\source\repos\Vaccines\Vaccines\Shared\bin\Debug\net5.0\Vaccines.Shared.dll
+C:\Users\isuru.sa\source\repos\Vaccines\Vaccines\Shared\bin\Debug\net5.0\ref\Vaccines.Shared.dll
+C:\Users\isuru.sa\source\repos\Vaccines\Vaccines\Shared\bin\Debug\net5.0\Vaccines.Shared.pdb
+C:\Users\isuru.sa\source\repos\Vaccines\Vaccines\Shared\obj\Debug\net5.0\Vaccines.Shared.csproj.AssemblyReference.cache
+C:\Users\isuru.sa\source\repos\Vaccines\Vaccines\Shared\obj\Debug\net5.0\Vaccines.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isuru.sa\source\repos\Vaccines\Vaccines\Shared\obj\Debug\net5.0\Vaccines.Shared.AssemblyInfoInputs.cache
+C:\Users\isuru.sa\source\repos\Vaccines\Vaccines\Shared\obj\Debug\net5.0\Vaccines.Shared.AssemblyInfo.cs
+C:\Users\isuru.sa\source\repos\Vaccines\Vaccines\Shared\obj\Debug\net5.0\Vaccines.Shared.csproj.CoreCompileInputs.cache
+C:\Users\isuru.sa\source\repos\Vaccines\Vaccines\Shared\obj\Debug\net5.0\Vaccines.Shared.dll
+C:\Users\isuru.sa\source\repos\Vaccines\Vaccines\Shared\obj\Debug\net5.0\ref\Vaccines.Shared.dll
+C:\Users\isuru.sa\source\repos\Vaccines\Vaccines\Shared\obj\Debug\net5.0\Vaccines.Shared.pdb

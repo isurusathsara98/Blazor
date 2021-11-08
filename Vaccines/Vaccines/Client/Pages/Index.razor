@@ -1,0 +1,48 @@
+﻿@page "/"
+@using Vaccines.Shared
+@inject HttpClient Http
+
+
+
+<h3>Vaccine details</h3>
+
+@if (vacine.Count == 0)
+{
+    <span>Loading Super Heroes ...</span>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Vaccine Name </th>
+                <th>Batch No </th>
+                <th>Distributed Area</th>
+                <th>No of Doses</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var vac in vacine)
+            {
+                <tr>
+                    <td>@vac.Name</td>
+                    <td>@vac.BatchNo</td>
+                    <td>@vac.Area</td>
+                    <td>@vac.NoofDoses</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    List<Vaccines.Shared.VaccineInfo> vacine = new List<Vaccines.Shared.VaccineInfo>();
+    protected override async Task OnInitializedAsync()
+    {
+
+        vacine = await Http.GetFromJsonAsync<List<VaccineInfo>>("api/Vaccine");
+
+    }
+
+}
