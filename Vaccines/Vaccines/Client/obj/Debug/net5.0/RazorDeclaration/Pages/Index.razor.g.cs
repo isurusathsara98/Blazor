@@ -83,6 +83,13 @@ using Vaccines.Client.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 11 "C:\Users\isuru.sa\source\repos\Vaccines\Vaccines\Client\_Imports.razor"
+using Vaccines.Client.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\isuru.sa\source\repos\Vaccines\Vaccines\Client\Pages\Index.razor"
 using Vaccines.Shared;
 
@@ -90,7 +97,7 @@ using Vaccines.Shared;
 #line hidden
 #nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
-    public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class Index : Microsoft.AspNetCore.Components.ComponentBase, IDisposable
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -98,21 +105,30 @@ using Vaccines.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 39 "C:\Users\isuru.sa\source\repos\Vaccines\Vaccines\Client\Pages\Index.razor"
+#line 69 "C:\Users\isuru.sa\source\repos\Vaccines\Vaccines\Client\Pages\Index.razor"
        
-    List<Vaccines.Shared.VaccineInfo> vacine = new List<Vaccines.Shared.VaccineInfo>();
+
     protected override async Task OnInitializedAsync()
     {
+        await VaccineService.GetVaccine();
+        VaccineService.OnChange += StateHasChanged;
+    }
+    public VaccineInfo vac { get; set; } = new VaccineInfo();
 
-        vacine = await Http.GetFromJsonAsync<List<VaccineInfo>>("api/Vaccine");
-
+    async void HandleSubmit()
+    {
+        await VaccineService.Createvac(vac);
     }
 
+    public void Dispose()
+    {
+        VaccineService.OnChange -= StateHasChanged;
+    }
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IVaccineService VaccineService { get; set; }
     }
 }
 #pragma warning restore 1591

@@ -82,6 +82,13 @@ using Vaccines.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\Users\isuru.sa\source\repos\Vaccines\Vaccines\Client\_Imports.razor"
+using Vaccines.Client.Services;
+
+#line default
+#line hidden
+#nullable disable
     public partial class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998

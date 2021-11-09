@@ -1,14 +1,14 @@
 ﻿@page "/"
 @using Vaccines.Shared
-@inject HttpClient Http
-
+@inject IVaccineService VaccineService
+@implements IDisposable
 
 
 <h3>Vaccine details</h3>
 
-@if (vacine.Count == 0)
+@if (VaccineService.vacine.Count == 0)
 {
-    <span>Loading Super Heroes ...</span>
+    <span>Loading Vaccine</span>
 }
 else
 {
@@ -22,7 +22,7 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var vac in vacine)
+            @foreach (var vac in VaccineService.vacine)
             {
                 <tr>
                     <td>@vac.Name</td>
@@ -34,15 +34,54 @@ else
         </tbody>
     </table>
 }
+<br />
+<h3>Create new Distribution info</h3>
+<EditForm Model="vac" OnSubmit="HandleSubmit">
+    <div>
+        <label>Vaccine Name</label>
+        <br />
+        <InputText @bind-Value="vac.Name"></InputText>
+    </div>
+    <br />
+    <div>
+        <label>Batch Number</label>
+        <br />
+        <InputNumber @bind-Value="vac.BatchNo"></InputNumber>
+    </div>
+    <br />
+    <div>
+        <label>Distributed area</label>
+        <br />
+        <InputText @bind-Value="vac.Area"></InputText>
 
+    </div>
+    <br />
+    <div>
+        <label>Number of Doses</label>
+        <br />
+        <InputNumber @bind-Value="vac.NoofDoses"></InputNumber>
+
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+</EditForm>
 
 @code {
-    List<Vaccines.Shared.VaccineInfo> vacine = new List<Vaccines.Shared.VaccineInfo>();
+
     protected override async Task OnInitializedAsync()
     {
+        await VaccineService.GetVaccine();
+        VaccineService.OnChange += StateHasChanged;
+    }
+    public VaccineInfo vac { get; set; } = new VaccineInfo();
 
-        vacine = await Http.GetFromJsonAsync<List<VaccineInfo>>("api/Vaccine");
-
+    async void HandleSubmit()
+    {
+        await VaccineService.Createvac(vac);
     }
 
+    public void Dispose()
+    {
+        VaccineService.OnChange -= StateHasChanged;
+    }
 }

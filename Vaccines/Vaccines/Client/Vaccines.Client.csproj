@@ -14,8 +14,4 @@
     <ProjectReference Include="..\Shared\Vaccines.Shared.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 </Project>

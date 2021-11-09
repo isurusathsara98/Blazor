@@ -196,12 +196,12 @@
       "netstandard.dll": "sha256-mbIVAluJ7cAx0vUQshB\/c1zEIK5JcYwIYxo\/BQ\/meRU=",
       "System.Private.CoreLib.dll": "sha256-FrZbEyy47f3RDuj77R5oHUGxSGEDgRRxykTjImrLqfM=",
       "Vaccines.Shared.dll": "sha256-qe2K9apeHqysB+\/7pfPTDFRGKPzST6XDjURqblY6vng=",
-      "Vaccines.Client.dll": "sha256-kV9lKjng4a65gHFdDn+VnM8OmPYrTdJbqGdTIkr6hv8="
+      "Vaccines.Client.dll": "sha256-x\/csTXMzGKrl+YeNu5Y2VU1LDzj0qsmtxd1am7ah\/Ik="
     },
     "lazyAssembly": null,
     "pdb": {
       "Vaccines.Shared.pdb": "sha256-pZaSu\/TNl9OxMySjjPdXgYX5prC5HQhQSYnxd4lC\/\/I=",
-      "Vaccines.Client.pdb": "sha256-CYUAon4gLUZKIL91slIVxYREahQEChL\/MXGBCBktrB4="
+      "Vaccines.Client.pdb": "sha256-goWqNYOBFhGqJOZcgWRhk0kxtT0u6+djGZWvpOJlRl8="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-5ttRwTa4Rar530elwLdfGDeH9I9NX9MPyDl6zLi9uug=",
