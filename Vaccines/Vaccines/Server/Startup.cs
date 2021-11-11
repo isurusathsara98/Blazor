@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Linq;
+using Vaccines.Server.Services;
 
 namespace Vaccines.Server
 {
@@ -25,6 +26,7 @@ namespace Vaccines.Server
 
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddScoped<IVaccineInformation, VaccineInformation>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

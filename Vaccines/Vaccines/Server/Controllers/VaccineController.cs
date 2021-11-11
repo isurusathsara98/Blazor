@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Vaccines.Server.Services;
 using Vaccines.Shared;
 
 namespace Vaccines.Server.Controllers
@@ -12,38 +14,23 @@ namespace Vaccines.Server.Controllers
     [ApiController]
     public class VaccineController : ControllerBase
     {
-        static List<VaccineInfo> vaccine = new List<VaccineInfo>
+        private readonly IVaccineInformation _vaccineInformation;
+       
+        public VaccineController(IVaccineInformation vaccineInformation)
         {
-            new VaccineInfo
-            {
-                Id=1,
-                Name="Sinopharm",
-                BatchNo=200,
-                Area="Galle",
-                NoofDoses=14000
-            },
-            new VaccineInfo
-            {
-                Id=2,
-                Name="Astraseni",
-                BatchNo=400,
-                Area="Gampaha",
-                NoofDoses=20000
-            },
-
-        };
+            _vaccineInformation = vaccineInformation;
+        }
 
         [HttpGet]
         public async Task<IActionResult> GetVaccine()
         {
-            return Ok(vaccine);
+          
+            return Ok(_vaccineInformation.GetVaccine());
         }
         [HttpPost]
         public async Task<IActionResult> Createvac(VaccineInfo vac)
         {
-            vac.Id = vaccine.Max(h => h.Id + 1);
-            vaccine.Add(vac);
-            return Ok(vaccine);
+            return Ok(_vaccineInformation.createVac(vac));
         }
     }
 }
